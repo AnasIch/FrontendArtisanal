@@ -1,0 +1,145 @@
+/* Conteneur principal */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background: white;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding-top: 150px; /* Augmenté pour éviter le chevauchement sur mobile */
+}
+
+/* Titre centré */
+.contact-title {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #b03a3a;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-title p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+/* Section Informations de Contact */
+.contact-info {
+    background: #b03a3a;
+    color: white;
+    padding: 40px;
+    /* border-radius: 10px; */
+    border-radius: 20px 0px 0px 20px;
+    width: 400px;
+    height: 600px;
+    text-align: left;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+/* Formulaire de Contact */
+.contact-form {
+    background: white;
+    padding: 40px;
+  
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Champs du formulaire */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Empêche le dépassement */
+}
+
+/* Bouton du formulaire */
+.contact-form button {
+    background: #1d6154;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #144d3e;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+     
+    .contact-info,
+    .contact-form {
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
