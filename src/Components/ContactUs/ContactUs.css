@@ -9,7 +9,6 @@
     background: white;
     min-height: 100vh;
     overflow-y: auto;
-    padding-top: 150px; /* Augmenté pour éviter le chevauchement sur mobile */
 }
 
 /* Titre centré */
@@ -143,3 +142,26 @@
         padding: 10px;
     }
 }
+
+
+
+.go-back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none; /* Supprime le soulignement */
+    color: #000; /* Change la couleur si nécessaire */
+    font-size: 16px;
+}
+
+.choise {
+    margin-left: 30px;
+}
+
+.subject p {
+    color: #b03a3a;
+}
+
+
+
+

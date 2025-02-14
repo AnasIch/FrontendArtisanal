@@ -1,9 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./ContactUs.css";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="contact-container">
+      {/* Bouton Retour */}
+      {/* <button className="back-button" onClick={() => console.log('click')}>← Back</button> */}
+      <Link to="/" className="go-back">← Go Back</Link>
+
+
       {/* Titre centré */}
       <div className="contact-title">
         <h2>Contact Us</h2>
@@ -36,23 +45,35 @@ const Contact = () => {
           </div>
           <input type="email" placeholder="Email" required />
           <input type="tel" placeholder="Phone Number" required />
-          <div className="subject">
-            
+          
+          {/* Choix du sujet */}
+       
+              <div className="subject">
+                  <p>Select Subject:</p>
+                  <div className="choise">
+                      <table>
+                            <tbody>
+                               <tr>
+                                <td><label>Support</label></td>
+                               <td><input type="radio" name="support" id="suport" /></td>
+                               </tr>
+
+                               <tr>
+                                <td><label>Error</label></td>
+                               <td><input type="radio" name="Error" id="Error" /></td>
+                               </tr>
 
 
-                    <div class="subject">
-                <p>Select Subject:</p>
-                <div>
-                    <label><input type="radio" name="subject" value="general" /> General Inquiry</label>
-                    <label><input type="radio" name="subject" value="support" /> Support</label>
-                    <label><input type="radio" name="subject" value="feedback" /> Feedback</label>
-                </div>
-            </div>
+                               <tr>
+                                <td><label>Achat</label></td>
+                               <td><input type="radio" name="Achat" id="Achat" /></td>
+                               </tr>
 
+                            </tbody>
+                      </table>
+                  </div>
+              </div>
 
-
-
-          </div>
           <textarea placeholder="Write your message..." rows="4"></textarea>
           <button type="submit">Send Message</button>
         </form>

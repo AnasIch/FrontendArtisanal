@@ -2,14 +2,36 @@ import logo from './logo.svg';
 import './App.css';
 import Homme_page from "./Components/Hommepage/Homme_page"
 import ContactUs from './Components/ContactUs/Contuct_Us';
+import { BrowserRouter as Router ,Routes,Route } from 'react-router-dom';
+// import Footer from './Components/Footer/Footer';
+// import AboutUs from "./Components/PeapleRate/AboutUs"
 function App() {
   return (
     <div className="App">
-       <Homme_page/>
+       {/* <Homme_page/>
 
        <br/>
        <br/>
-       <ContactUs/>
+       <ContactUs/> */}
+
+
+         
+
+
+      
+            <Routes>
+                <Route path="/" element={ <Homme_page/>} />
+                <Route path="/Contact_Us" element={ <ContactUs/>} />
+            </Routes>
+              {/* <AboutUs/> */}
+
+              {/* the footer  */}
+              {/* <Footer/> */}
+
+
+             
+          
+       
     </div>
   );
 }
