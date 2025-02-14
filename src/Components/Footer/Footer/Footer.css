@@ -1,0 +1,109 @@
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  
+  .about-section {
+    flex: 1 1 300px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffbf47;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .contact {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .links-section {
+    flex: 1 1 200px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #ffbf47;
+  }
+  
+  .register-section {
+    flex: 1 1 200px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .register-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .register-button {
+    padding: 0.5rem 1rem;
+    background-color: #ffbf47;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #ffbf47;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #e2e8f0;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+  }
+  
